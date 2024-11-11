@@ -1,7 +1,84 @@
 *{
-    margin:10px;
-    padding:10px;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: white;
+
+    
+}
+.main h1{
+    font-size: 30px;
+    padding: 10px 50px;
+    margin: 0 10px;
+    
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 50px;
+     
+}
+.parent div{
+    margin: 0 10px;
+    border: none;
+    border-radius: 20px;
+    width: 375px;
+
+    
+}
+.Page1{
+    background: linear-gradient(rgb(250, 250, 250, 0.8), rgba(250, 250, 250, 0.5));
+    position: relative;
+    bottom: 168px;
+    padding: 20px;
+    
+}
+.Page1 h2{
+    font-size: 15px;
+    color: blue;
+}
+.Page2{
+    background: linear-gradient(rgb(250, 250, 250, 0.8), rgba(250, 250, 250, 0.5));
+    position: relative;
+    bottom: 168px;
+    padding: 20px;
+    
+}
+.Page2 h2{
+    font-size: 15px;
+    color: blue;
+}
+.Page3{
+    background: linear-gradient(rgb(250, 250, 250, 0.8), rgba(250, 250, 250, 0.5));
+    position: relative;
+    bottom: 168px;
+    padding: 20px;
+    
+
+}
+.Page3 h2{
+    font-size: 15px;
+    color: blue;
+}
+.parent div img{
+    border: none;
+    border-radius: 20px;
+}
+.pr{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#sp{
+    font-size: 20px;
+    
+}
+#bt{
+    padding: 15px;
+    background: lightcoral;
+    color: black;
 }
 .real, .contact{
     display: flex;
@@ -58,6 +135,9 @@ input{
 @media screen and (min-width:0) and (max-width:750px) {
     h1{
         font-size: 1.2rem;
+    }
+    .parent{
+        grid-template-columns: auto;
     }
 }
 @media screen and (min-width:750px) and (max-width:1024px) {
